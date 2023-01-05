@@ -11,5 +11,7 @@ before_script:
 - node_modules/.bin/newman --version
 
 
+"""script:
+- node_modules/.bin/newman run tests/my_collection.postman_collection.json -e tests/Local.postman_environment.json"""
 script:
-- node_modules/.bin/newman run tests/my_collection.postman_collection.json -e tests/Local.postman_environment.json
+- node_modules/.bin/newman run tests/hello_world.postman_collection.json
